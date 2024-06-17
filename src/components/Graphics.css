@@ -41,7 +41,7 @@ body, html {
     animation: change 10s infinite ease-in-out;
 }
 
-/* @keyframes change {
+ @keyframes change {
     0% {
         background-image: url(../materials/Backgrounds/GRAPHICSbg/Property\ 1=Frame\ 2.png);
     }
@@ -58,7 +58,7 @@ body, html {
         background-image: url(../materials/Backgrounds/GRAPHICSbg/Property\ 1=Frame\ 2.png);
     }
 }
- */
+ 
 
 .fade-in {
   opacity: 1;

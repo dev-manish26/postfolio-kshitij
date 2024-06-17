@@ -1,0 +1,154 @@
+@font-face {
+    font-family: 'nagasaki';
+    src: url('../materials/fonts/nagasaki.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'league-spartan';
+    src: url('../materials/fonts/league-spartan/league-spartan-master/webfonts/leaguespartan-bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+body, html {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.section {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  background-position: center center;
+  transition: opacity 1s, background-image 1s;
+}
+
+.bgChange{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    background-image: url(../materials/Backgrounds/LOGObg/Property\ 1=Frame\ 2.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    justify-content: center;
+    will-change: background-image;
+    animation: change 10s infinite ease-in-out;
+}
+
+/* @keyframes change {
+    0% {
+        background-image: url(../materials/Backgrounds/LOGObg/Property\ 1=Frame\ 2.svg);
+    }
+    25% {
+        background-image: url(../materials/Backgrounds/LOGObg/Property\ 1=Frame\ 3.svg);
+    }
+    50% {
+        background-image: url(../materials/Backgrounds/LOGObg/Property\ 1=Frame\ 4.svg);
+    }
+    75% {
+        background-image: url(../materials/Backgrounds/LOGObg/Property\ 1=Frame\ 5.svg);
+    }
+    100% {
+        background-image: url(../materials/Backgrounds/LOGObg/Property\ 1=Frame\ 2.svg);
+    }
+} */
+
+
+.fade-in {
+  opacity: 1;
+}
+
+.fade-out {
+  opacity: 0;
+}
+
+.logo-folio-content {
+  font-size: 12rem;
+  max-width: 50%;
+  text-shadow: 0 0 10px #000;
+  text-align: center;
+  color: white;
+}
+
+.logo-folio-content div.logo{
+    font-family: 'nagasaki', sans-serif;
+    margin-right: 170px;
+    margin-bottom: 0;
+    margin-top: -5px;
+}
+
+.folio{
+    font-family: 'league-spartan', sans-serif; 
+    font-size: 1.7rem;
+    margin-top: -65px;
+    margin-right: -143px;
+    max-height: 8px;
+}
+
+.lines {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 0; 
+    pointer-events: none; 
+  }
+  
+  .horizontal-line1 {
+    position: absolute;
+    top: 21.7%;
+    left: 0;
+    width: 100%;
+    height: 1px; 
+    background-color: white;
+  }
+
+  .horizontal-line2 {
+    position: absolute;
+    bottom: 34.2%;
+    left: 0;
+    width: 100%;
+    height: 1px; 
+    background-color: white;
+  }
+  
+  .vertical-line1 {
+    position: absolute;
+    left: 48.51%;
+    top: 0;
+    width: 0.125px; 
+    height: 100%;
+    background-color: white;
+  }
+
+  .vertical-line2 {
+    position: absolute;
+    left: 39.9%;
+    top: 0;
+    width: 0.125px; 
+    height: 100%;
+    background-color: white;
+  }
+
+  .vertical-line3 {
+    position: absolute;
+    left: 59.7%;
+    top: 0;
+    width: 0.125px; 
+    height: 100%;
+    background-color: white;
+  }
+

@@ -1,0 +1,67 @@
+.section {
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  background-color: #e3f2fd; 
+}
+
+.resume-container {
+  font-family: Arial, sans-serif;
+  color: #333;
+  padding: 20px;
+  background-color: #e0f7fa;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.contacts, .experience, .softwares, .personal-skills {
+  width: 48%;
+  margin-bottom: 2px;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #013D50;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 8px;
+}
+
+a {
+  color: #007acc;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.icon {
+  margin-right: 10px;
+}
+
+.software-icons {
+  display: flex;
+  gap: 10px;
+}
+
+.skill {
+  display: inline-block;
+  padding: 5px 10px;
+  margin: 5px;
+  border: 1px solid;
+  border-color: #013D50;
+  color: #283F47;
+  border-radius: 5px;
+}

@@ -1,25 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import MainSection from './components/MainSection';
+import About from './components/About';
+import Logofolio from './components/Logofolio';
+import Graphics from './components/Graphics';
+import Illustrations from './components/Illustrations';
+import './styles.css';
+import About2 from './components/About2';
+import Logos from './components/Logos';
+import Kriptees from './components/Kriptees';
 
-function App() {
+const App = () => {
+  const navigateToSection = (sectionId) => {
+    document.getElementById(sectionId).scrollIntoView({ behavior: 'smooth' });
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <MainSection navigateToSection={navigateToSection} />
+      <About />
+      <About2 />
+      <Logofolio />
+      <Logos />
+      <Graphics />
+      <Kriptees/>
+      <Illustrations />
     </div>
   );
-}
+};
 
 export default App;

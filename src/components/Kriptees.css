@@ -1,0 +1,99 @@
+ 
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+  @font-face {
+    font-family: 'mincraft-R';
+    src: url('../materials/fonts/minecrafter/Minecrafter.Reg.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'mincraft-AR';
+    src: url('../materials/fonts/minecrafter/Minecrafter.Alt.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: black;
+    overflow: hidden;
+    margin: auto;
+    padding-right: 0;
+  }
+  
+  .left-section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    left: 50px;
+    top: -62px;
+    height: 100%;
+    z-index: 1;
+}
+  
+  .right-section {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 710px;
+    left: -10%;
+    right: -50%;
+    color: #fff;
+    z-index: 0;
+  }
+  
+  .title {
+    font-family: 'mincraft-R' , sans-serif;
+    color: #fff;
+    font-size: 4rem;
+    max-width: 80%;
+    font-weight: lighter;    
+    letter-spacing: 30px;
+  }
+  
+  .description {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
+    font-size: 1.2rem;
+    max-width: 90%;
+    color: white;
+  }
+  
+  .tshirt-image {
+    width: 465px;
+    height: 710px;
+    object-fit: cover;
+    margin: 0 20px;
+    border: 2px solid black;
+    border-radius: 50px;
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+  }
+  
+  
+ 
+  
+  .marquee-wrapper {
+    animation: fadeIn 0.5s ease-in-out;
+    width: 150%;
+    position: absolute;
+    top: 0;
+    left: 10%;
+  }
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  

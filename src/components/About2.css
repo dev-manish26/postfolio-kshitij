@@ -1,26 +1,29 @@
-.section {
-  display: flex;
-  height: 100vh;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 2rem;
-  background-color: #e3f2fd; 
+.resume-container h1{
+  font-family: 'impact1', sans-serif;
+  font-weight:normal;
 }
 
 .resume-container {
-  font-family: Arial, sans-serif;
+ 
   color: #333;
-  padding: 20px;
-  background-color: #e0f7fa;
+  padding: 10px;
+  background-image: url('../materials/AboutBG2.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
 }
 
 .contacts, .experience, .softwares, .personal-skills {
+  flex: 1;
   width: 48%;
   margin-bottom: 2px;
+}
+.personal-skills{
+  flex: 5;
 }
 
 h1 {
@@ -35,17 +38,21 @@ ul {
 }
 
 li {
+  display: flex;
+  justify-content: start;
+  align-items: flex-end;
   margin-bottom: 8px;
 }
 
 a {
-  color: #007acc;
+  color: black;
   text-decoration: none;
 }
 
 a:hover {
   text-decoration: underline;
 }
+
 
 .icon {
   margin-right: 10px;
@@ -64,4 +71,19 @@ a:hover {
   border-color: #013D50;
   color: #283F47;
   border-radius: 5px;
+}
+
+.skills, .resume-container .contacts a {
+  font-family: "League Spartan", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.experience{
+  font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    color: #1C5367;
 }

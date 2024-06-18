@@ -1,5 +1,13 @@
 import React from 'react';
 import './About2.css';
+import psLogo from '../materials/softwareLogos/photoshop-svgrepo-com.svg';
+import canvaLogo from '../materials/softwareLogos/canva-svgrepo-com.svg';
+import aiLogo from '../materials/softwareLogos/adobe-illustrator-svgrepo-com.svg';
+import lrLogo from '../materials/softwareLogos/lightroom-svgrepo-com.svg';
+import fsLogo from '../materials/softwareLogos/fuse_11227474 1.svg';
+import insta from '../materials/softwareLogos/instagram.svg';
+import behance from '../materials/softwareLogos/behance.svg';
+import email from '../materials/softwareLogos/email.svg';
 
 const About2 = () => {
   return (
@@ -8,15 +16,15 @@ const About2 = () => {
         <h1>CONTACTS</h1>
         <ul>
           <li>
-            <span className="icon">📧</span>
+          <img className='icon' width="32" height="32" src={email} alt="new-post--v1"/>
             <a href="mailto:kshitijrampal123@gmail.com">kshitijrampal123@gmail.com</a>
           </li>
           <li>
-            <span className="icon">🌐</span>
+          <img className='icon'width="32" height="32" src={behance} alt="behance"/>
             <a href="https://www.behance.net/kshitijrampal">behance.net/kshitijrampal</a>
           </li>
           <li>
-            <span className="icon">📸</span>
+          <img className='icon' width="30" height="30" src={insta} alt="instagram-new--v1"/>
             <a href="https://www.instagram.com/dr.scribbles03/">instagram.com/dr.scribbles03</a>
           </li>
         </ul>
@@ -25,11 +33,11 @@ const About2 = () => {
       <div className="softwares">
         <h1>SOFTWARES</h1>
         <div className="software-icons">
-          <span className="icon">Ps</span>
-          <span className="icon">Ai</span>
-          <span className="icon">Fs</span>
-          <span className="icon">Lr</span>
-          <span className="icon">Canva</span>
+          <img className='icon' width="64" height="64" src= {psLogo} alt="instagram-new--v1"/>
+          <img className='icon' width="64" height="64" src= {fsLogo} alt="instagram-new--v1"/>
+          <img className='icon' width="64" height="64" src= {aiLogo} alt="instagram-new--v1"/>
+          <img className='icon' width="64" height="64" src= {lrLogo} alt="instagram-new--v1"/>
+          <img className='icon' width="64" height="64" src= {canvaLogo} alt="instagram-new--v1"/>
         </div>
       </div>
 

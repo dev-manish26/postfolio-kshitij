@@ -9,7 +9,7 @@ const MainSection = ({ navigateToSection }) => {
         <div className="header-container">
           <div className="year">2024</div>
           <div className="portfolio-container">
-            <h1 className="portfolio">PORTFOLIO</h1>
+            <div className="portfolio">PORTFOLIO</div>
             <div className="signature">kr_scribbles</div>
           </div>
         </div>

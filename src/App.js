@@ -5,6 +5,7 @@ import Logofolio from './components/Logofolio';
 import Graphics from './components/Graphics';
 import Illustrations from './components/Illustrations';
 import './styles.css';
+import './fonts.css';
 import About2 from './components/About2';
 import Logos from './components/Logos';
 import Kriptees from './components/Kriptees';

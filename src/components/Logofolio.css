@@ -34,7 +34,7 @@ body, html {
     animation: logoBGchange 10s infinite ease-in-out;
 }
 
-/*  @keyframes logoBGchange {
+ @keyframes logoBGchange {
     0% {
         background-image: url(../materials/Backgrounds/LOGObg/Property\ 1=Frame\ 2.svg);
     }
@@ -50,7 +50,7 @@ body, html {
     100% {
         background-image: url(../materials/Backgrounds/LOGObg/Property\ 1=Frame\ 2.svg);
     }
-}  */
+}  
 
 
 .fade-in {

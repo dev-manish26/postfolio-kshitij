@@ -10,12 +10,11 @@ import Marquee from "react-fast-marquee";
 const Logos = () => {
   return (
     <div className="logofolio-section section">
-      {<Marquee autoFill='yes'>
-        <div className="black-strip">
-          <div className="logofolio-text">logofolio .</div>
-        </div>
-      </Marquee>}
-      
+      <div className="black-strip">
+        <Marquee autoFill='yes'>
+        <div className="logofolio-text">logofolio.</div>
+        </Marquee>
+      </div>
       <div className="logos-container">
         <img src={logo1} title='hello' className="logo logo1" />
         <img src={logo2} alt="Logo 2" className="logo logo2" />

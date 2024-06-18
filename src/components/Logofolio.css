@@ -31,10 +31,10 @@ body, html {
     text-align: center;
     justify-content: center;
     will-change: background-image;
-    animation: change 10s infinite ease-in-out;
+    animation: logoBGchange 10s infinite ease-in-out;
 }
 
- @keyframes change {
+/*  @keyframes logoBGchange {
     0% {
         background-image: url(../materials/Backgrounds/LOGObg/Property\ 1=Frame\ 2.svg);
     }
@@ -50,7 +50,7 @@ body, html {
     100% {
         background-image: url(../materials/Backgrounds/LOGObg/Property\ 1=Frame\ 2.svg);
     }
-} 
+}  */
 
 
 .fade-in {
@@ -62,26 +62,33 @@ body, html {
 }
 
 .logo-folio-content {
+  display: flex;
+  flex-direction: column;
   font-size: 12rem;
   max-width: 50%;
   text-shadow: 0 0 10px #000;
   text-align: center;
   color: white;
+  margin-top: 1.2rem;
 }
 
 .logo-folio-content div.logo{
     font-family: 'nagasaki', sans-serif;
-    margin-right: 170px;
-    margin-bottom: 0;
-    margin-top: -5px;
+    margin: 0;
+    flex: 2;
+    
 }
 
 .folio{
-    font-family: 'league-spartan', sans-serif; 
+    flex: 1;
+    font-family: "League Spartan", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
     font-size: 1.7rem;
-    margin-top: -65px;
-    margin-right: -143px;
-    max-height: 8px;
+    margin-top: -2rem;
+    margin-right: -5.5rem;
+    
 }
 
 .lines {

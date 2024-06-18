@@ -12,7 +12,7 @@ import Tee8 from '../materials/Tee/tee 8 orange front.png'
 
 const Kriptees = () => {
   return (
-    <div className="container section">
+    <div className="kriptees-container section">
       <div className="left-section">
         <h1 className="title">KRIPTEES</h1>
         <p className="description">

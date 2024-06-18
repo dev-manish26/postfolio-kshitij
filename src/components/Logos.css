@@ -27,24 +27,33 @@
   }
   
   .logofolio-text {
-    font-family: 'montserrat';
-    letter-spacing: 25px;
-    font-size: 1rem;
-    font-weight: lighter;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    letter-spacing: 0.5rem;
+    font-size: 1.5rem;
     text-transform: uppercase;
   }
   
   .logos-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    overflow: hidden;
-    align-items: center;
-    
-  }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-grow: 1;
+  gap: 3rem;
+}
+
+.logo {
+  max-height: 320px;
+  max-width: 320px;
+}
+
+.logo4, .logo5{
+  margin: 1.5rem;
+  margin-top: -3.2rem;
   
-  .logo {
-    width: 300px;
-    height: auto;
-    margin: 2rem 4rem;
-  }
+  
+
+}

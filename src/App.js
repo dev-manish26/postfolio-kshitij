@@ -9,6 +9,7 @@ import './fonts.css';
 import About2 from './components/About2';
 import Logos from './components/Logos';
 import Kriptees from './components/Kriptees';
+import Gallery from './components/Gallery';
 
 const App = () => {
   const navigateToSection = (sectionId) => {
@@ -25,6 +26,7 @@ const App = () => {
       <Graphics />
       <Kriptees/>
       <Illustrations />
+      <Gallery />
     </div>
   );
 };

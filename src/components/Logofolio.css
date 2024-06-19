@@ -34,11 +34,8 @@ body, html {
     animation: logoBGchange 10s infinite ease-in-out;
 }
 
-<<<<<<< HEAD
+
  @keyframes logoBGchange {
-=======
-  @keyframes logoBGchange {
->>>>>>> 293dd2f (illustrations)
     0% {
         background-image: url(../materials/Backgrounds/LOGObg/Property\ 1=Frame\ 2.svg);
     }

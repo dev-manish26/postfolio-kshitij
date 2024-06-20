@@ -34,7 +34,7 @@ body, html {
     animation: change 10s infinite ease-in-out;
 }
 
- @keyframes change {
+/*  @keyframes change {
     0% {
         background-image: url(../materials/Backgrounds/GRAPHICSbg/Property\ 1=Frame\ 2.png);
     }
@@ -51,15 +51,8 @@ body, html {
         background-image: url(../materials/Backgrounds/GRAPHICSbg/Property\ 1=Frame\ 2.png);
     }
 }
- 
+  */
 
-.fade-in {
-  opacity: 1;
-}
-
-.fade-out {
-  opacity: 0;
-}
 
 .graphics-content {
   font-size: 12rem;
@@ -70,8 +63,8 @@ body, html {
   text-align: center;
   color: white;
   font-family: 'nagasaki', sans-serif;
-  margin: auto 0 ;
-  margin-top: 10rem;
+  /* margin: auto 0 ;
+  margin-top: 10rem; */
   
 }
 

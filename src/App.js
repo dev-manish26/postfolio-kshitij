@@ -10,6 +10,8 @@ import About2 from './components/About2';
 import Logos from './components/Logos';
 import Kriptees from './components/Kriptees';
 import Gallery from './components/Gallery';
+import PosterShowcase from './components/PosterShowcase';
+
 
 const App = () => {
   const navigateToSection = (sectionId) => {
@@ -25,6 +27,7 @@ const App = () => {
       <Logos />
       <Graphics />
       <Kriptees/>
+      <PosterShowcase />
       <Illustrations />
       <Gallery />
     </div>

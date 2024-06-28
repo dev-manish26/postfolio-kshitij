@@ -46,6 +46,8 @@ const PosterShowcase = () => {
         beforeChange: (current, next) => setCurrentPoster(next),
         autoplay: false, // We handle autoplay manually
         arrows: false,
+        focusOnChange: false,
+        focusOnSelect: false
     };
 
     const handleNext = () => {

@@ -1,0 +1,10 @@
+.posterDetailPage {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.posterDetailPage img{
+    width: 100%;
+}

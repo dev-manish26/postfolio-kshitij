@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import Slider from 'react-slick';
+import { useNavigate } from 'react-router-dom';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import './PosterShowcase.css';
@@ -22,6 +23,7 @@ const posters = [
 const PosterShowcase = () => {
     const [currentPoster, setCurrentPoster] = useState(0);
     const sliderRef = useRef(null);
+    const navigate = useNavigate();
 
     useEffect(() => {
         const interval = setInterval(() => {
@@ -56,6 +58,10 @@ const PosterShowcase = () => {
         sliderRef.current.slickPrev();
     };
 
+    const handlePosterClick = (index) => {
+        navigate(`/poster/${index + 1}`);
+    };
+
     return (
         <div className={`poster-showcase`}>
             <div className='overlay-poster'></div>
@@ -76,7 +82,7 @@ const PosterShowcase = () => {
             <div className="thumbnail-slider">
                 <Slider ref={sliderRef} {...settings}>
                     {posters.map((poster, index) => (
-                        <div key={index} className={`thumbnail`} >
+                        <div key={index} className={`thumbnail`} onClick={() => handlePosterClick(index)}>
                             <img className='poster-image' src={poster.image} alt={poster.title} />
                         </div>
                     ))}

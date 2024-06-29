@@ -1,7 +1,7 @@
 import React from 'react';
 import poster1 from '../materials/Posters/poster1/poster1.png';
 import post1 from '../materials/Posters/poster1/Post1-1.png';
-import './PosterDetail.css';
+
 
 
 

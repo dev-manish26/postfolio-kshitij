@@ -8,6 +8,7 @@ import post25 from '../materials/Posters/poster2/post2-5.png';
 import post26 from '../materials/Posters/poster2/post2-6.png';
 import post27 from '../materials/Posters/poster2/post2-7.png';
 
+
 const Poster2Detail = () => (
   <div className='posterDetailPage'>
     <img src={poster2} alt="Dream" />

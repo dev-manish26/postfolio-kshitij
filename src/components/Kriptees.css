@@ -3,9 +3,10 @@
     flex-direction: row;
     align-items: center;
     background-color: black;
-    overflow: hidden;
+    /* overflow: hidden; */
     margin: auto;
     padding-right: 0;
+    position: relative;
   }
 
   .kriptees-container h1{
@@ -76,5 +77,16 @@
     left: 10%;
   }
 
+  .skateGirl-wrapper {
+    position: absolute;
+    bottom: -50px;
+    left: 0;
+    z-index: 1000; 
+  }
+  
+  .skateGirl {
+    width: 250px; 
+    height: auto;
+  }
 
   

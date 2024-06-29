@@ -24,17 +24,34 @@ const PosterShowcase = () => {
     const [currentPoster, setCurrentPoster] = useState(0);
     const sliderRef = useRef(null);
     const navigate = useNavigate();
+    const [isHovered, setIsHovered] = useState(false);
+    const [intervalId , setIntervalId] = useState(null);
+    
+    /* poster hover effect */
+    const handleMouseEnter = () => {
+        setIsHovered(true);
+        clearInterval(intervalId);
+    };
 
-    useEffect(() => {
-        const interval = setInterval(() => {
+    const handleMouseLeave = () => {
+        setIsHovered(false);
+        startAutoSlide();
+    };
+
+    const startAutoSlide = () => {
+        const id = setInterval(() => {
             setCurrentPoster((prev) => {
                 const next = (prev + 1) % posters.length;
                 sliderRef.current.slickGoTo(next); // Move the slider to the next slide
                 return next;
             });
         }, 5000); // Change poster every 5 seconds
+        setIntervalId(id);
+    };
 
-        return () => clearInterval(interval);
+    useEffect(() => {
+        startAutoSlide();
+        return () => clearInterval(intervalId);
     }, []);
 
     const settings = {
@@ -44,10 +61,11 @@ const PosterShowcase = () => {
         centerMode: true,
         infinite: true,
         beforeChange: (current, next) => setCurrentPoster(next),
-        autoplay: false, // We handle autoplay manually
+        autoplay: false, 
         arrows: false,
         focusOnChange: false,
-        focusOnSelect: false
+        focusOnSelect: false,
+        pauseOnHover: true
     };
 
     const handleNext = () => {
@@ -67,7 +85,7 @@ const PosterShowcase = () => {
     return (
         <div className={`poster-showcase`}>
             <div className='overlay-poster'></div>
-            <div className='overlay-poster-hover'></div>
+            <div className='overlay-poster-hover' style={{ display: isHovered ? 'block' : 'none' }}></div>
             <div 
                 className='poster-bg' 
                 style={{ 
@@ -84,11 +102,12 @@ const PosterShowcase = () => {
             <div className="thumbnail-slider">
                 <Slider ref={sliderRef} {...settings}>
                     {posters.map((poster, index) => (
-                        <div key={index} className={`thumbnail`} onClick={() => handlePosterClick(index)}>
-                            <img className='poster-image' src={poster.image} alt={poster.title} />
+                        <div key={index} className={`thumbnail`} onClick={() => handlePosterClick(index)} >
+                            <img className='poster-image' src={poster.image} alt={poster.title} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} />
                         </div>
                     ))}
                 </Slider>
+                
             </div>
             <button className="previous" onClick={handlePrevious}>&lt;</button>
             <button className="next" onClick={handleNext}>&gt;</button>

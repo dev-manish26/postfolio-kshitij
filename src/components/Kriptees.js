@@ -9,15 +9,20 @@ import Tee5 from '../materials/Tee/mockup 2.png'
 import Tee6 from '../materials/Tee/tee 10 black back.png'
 import Tee7 from '../materials/Tee/tee 3 black back.png'
 import Tee8 from '../materials/Tee/tee 8 orange front.png'
+import skateGirl from '../materials/Tee/skatefirl.svg'
 
 const Kriptees = () => {
   return (
     <div className="kriptees-container section">
+      <div className='skateGirl-wrapper'>
+        <img className='skateGirl' src={skateGirl} alt='skateGirl' />
+      </div>      
       <div className="left-section">
         <h1 className="title">KRIPTEES</h1>
         <p className="description">
           Kriptees is all about celebrating your love for anime with stylish, high-quality t-shirts. Our passion for anime shines through in every design, making each piece a perfect blend of fandom and fashion. Whether you're into classic series or new hits, Kriptees offers unique, comfy shirts that let you wear your favorite characters and moments with pride. Join us in sharing the joy of anime, one awesome t-shirt at a time.
         </p>
+        
       </div>
       <div className="right-section">
         <div className="marquee-wrapper">

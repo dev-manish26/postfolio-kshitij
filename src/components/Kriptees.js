@@ -10,12 +10,16 @@ import Tee6 from '../materials/Tee/tee 10 black back.png'
 import Tee7 from '../materials/Tee/tee 3 black back.png'
 import Tee8 from '../materials/Tee/tee 8 orange front.png'
 import skateGirl from '../materials/Tee/skatefirl.svg'
+import ktLogo from '../materials/logos/logo2.png'
 
 const Kriptees = () => {
   return (
     <div className="kriptees-container section">
       <div className='skateGirl-wrapper'>
         <img className='skateGirl' src={skateGirl} alt='skateGirl' />
+      </div> 
+      <div className='kt-wrapper'>
+        <img className='kt-logo' src={ktLogo} alt='KT' />
       </div>      
       <div className="left-section">
         <h1 className="title">KRIPTEES</h1>

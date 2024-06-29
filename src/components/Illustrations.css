@@ -65,7 +65,7 @@ body, html {
   }
   .illustration,.gallery{
     color: white;
-    /* text-shadow: 0 0 10px #000; */
+    text-shadow: 0 0 10px #000;
     text-transform: uppercase;
     
   }

@@ -29,11 +29,12 @@
   .logofolio-text {
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
-    font-weight: 500;
+    font-weight: 400;
     font-style: normal;
-    letter-spacing: 0.5rem;
-    font-size: 1.5rem;
+    font-size: 1rem;
+    letter-spacing: 0.3rem;
     text-transform: uppercase;
+    margin: 0 50px;
   }
   
   .logos-container {

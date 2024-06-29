@@ -12,7 +12,9 @@ const Logos = () => {
     <div className="logofolio-section section">
       <div className="black-strip">
         <Marquee autoFill='yes'>
-        <div className="logofolio-text">logofolio.</div>
+        <div className="logofolio-text">logofolio      .</div>
+        <div className="logofolio-text">logofolio      .</div>
+        <div className="logofolio-text">logofolio      .</div>
         </Marquee>
       </div>
       <div className="logos-container">

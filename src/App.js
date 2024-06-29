@@ -7,6 +7,7 @@ import Graphics from './components/Graphics';
 import Illustrations from './components/Illustrations';
 import './styles.css';
 import './fonts.css';
+import './FadeOnScroll.css';
 import './components/PosterDetail.css';
 import About2 from './components/About2';
 import Logos from './components/Logos';

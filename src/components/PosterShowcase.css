@@ -96,17 +96,23 @@ button.previous, button.next {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    background-color: transparent;
-    color: #D9D9D9;
+    background-color: #D9D9D9; 
+    color: black; 
     border: none;
-    font-size: 2rem;
+    font-size: 1rem; 
     cursor: pointer;
     z-index: 1000;
-    padding: 5px;
+    padding: 0; 
+    width: 25px; 
+    height: 25px; 
+    border-radius: 50%; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
 }
 
 button.previous {
-    left: 1px;
+    left: 10px;
     top: 45%;
 }
 

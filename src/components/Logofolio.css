@@ -57,18 +57,19 @@ body, html {
 .logo-folio-content {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   font-size: 12rem;
-  max-width: 50%;
+  /* max-width: 50%; */
   text-shadow: 0 0 10px #000;
   text-align: center;
   color: white;
-  /* margin-top: 1.2rem; */
 }
 
 .logo-folio-content div.logo{
     font-family: 'nagasaki', sans-serif;
     margin: 0;
-    flex: 2;
+    flex: 1;
     
 }
 
@@ -79,8 +80,7 @@ body, html {
     font-weight: 700;
     font-style: normal;
     font-size: 1.7rem;
-    display: flex;
-    justify-content: end;
+    align-self: flex-end;
     
     
 }

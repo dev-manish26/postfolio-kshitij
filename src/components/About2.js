@@ -55,9 +55,9 @@ const About2 = () => {
       <div className="experience">
         <h1>EXPERIENCE</h1>
         <ul>
-          <li>-Freelance Graphic Designer</li>
-          <li>-Design Lead at Board of Technical Communication, NIT Agartala</li>
-          <li>-Design Lead at Kriptees</li>
+          <li>- Freelance Graphic Designer</li>
+          <li>- Design Lead at Board of Technical Communication,   NIT Agartala</li>
+          <li>- Design Lead at Kriptees</li>
         </ul>
       </div>
 

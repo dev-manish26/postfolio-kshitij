@@ -24,7 +24,7 @@ const Illustrations = () => {
     <div className="section bgChange3" id="illustrations" >
       <div className="illustration-content">
         <div className="illustration">illustration</div>
-        <div className="gallery"><span className='gallery-text'>gallery.</span></div>
+        <div className="gallery">gallery.</div>
       </div>
     </div>
   );

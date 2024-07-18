@@ -6,13 +6,16 @@ const MainSection = ({ navigateToSection }) => {
     <div className="main-section">
       <div className="overlay"></div>
       <div className="content">
+      <div className="year">2024</div>
         <div className="header-container">
-          <div className="year">2024</div>
+          
           <div className="portfolio-container">
-            <div className="portfolio">PORTFOLIO</div>
-            <div className="signature">kr_scribbles</div>
+            <div className="portfolio">PORTFOLIO</div>           
           </div>
+          <div className="signature">kr_scribbles</div>
+
         </div>
+        
         <div className="buttons">
           <button onClick={() => navigateToSection('about')}>ABOUT</button>
           <button onClick={() => navigateToSection('logofolio')}>LOGOFOLIO</button>

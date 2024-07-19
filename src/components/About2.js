@@ -5,7 +5,6 @@ import canvaLogo from '../materials/softwareLogos/canva-svgrepo-com.svg';
 import aiLogo from '../materials/softwareLogos/adobe-illustrator-svgrepo-com.svg';
 import lrLogo from '../materials/softwareLogos/lightroom-svgrepo-com.svg';
 import fsLogo from '../materials/softwareLogos/fuse_11227474 1.svg';
-import insta from '../materials/softwareLogos/instagram.svg';
 import behance from '../materials/softwareLogos/behance.svg';
 import email from '../materials/softwareLogos/email.svg';
 
@@ -17,15 +16,11 @@ const About2 = () => {
         <ul>
           <li>
           <img className='icon' width="32" height="32" src={email} alt="new-post--v1"/>
-            <a href="mailto:kshitijrampal123@gmail.com">kshitijrampal123@gmail.com</a>
+            <a href="mailto:kshitijranpal123@gmail.com">kshitijrampal123@gmail.com</a>
           </li>
           <li>
           <img className='icon'width="32" height="32" src={behance} alt="behance"/>
-            <a href="https://www.behance.net/kshitijrampal">behance.net/kshitijrampal</a>
-          </li>
-          <li>
-          <img className='icon' width="30" height="30" src={insta} alt="instagram-new--v1"/>
-            <a href="https://www.instagram.com/dr.scribbles03/">instagram.com/dr.scribbles03</a>
+            <a href="https://www.behance.net/kshitijranpal">behance.net/kshitijrampal</a>
           </li>
         </ul>
       </div>

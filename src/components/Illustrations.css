@@ -88,6 +88,8 @@ body, html {
       font-size: 3.1rem;
       display: flex;
       justify-content: end;
+      position: relative;
+      top: -16%;
       
   }
  
